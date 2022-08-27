@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="32823f3c-060a-45b0-951a-e7fbc9fc4a96" name="portfolioweb" url="jdbc:mysql://localhost/bbdd_portfolio?useSSL=false&amp;allowMultiQueries=true&amp;serverTimezone=UTC" driverClass="com.mysql.cj.jdbc.Driver" />
+    </data-sources>
+    <data-source-infos>
+      <data-source-info id="32823f3c-060a-45b0-951a-e7fbc9fc4a96" persistence-unit-name="JpaPersistence" />
+    </data-source-infos>
+  </component>
+</project>
