@@ -1,6 +1,7 @@
 package com.marcoscareggio.portfolioweb.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Usuarios")
@@ -23,8 +24,13 @@ public class Usuario {
     @Column(name = "apellido", nullable = false, length = 45)
     private String apellido;
 
-    @Column(name = "nombredeusuario", nullable = false, length = 45)
+    @Column(name = "nombredeusuario", nullable = false, length = 45,unique=true)
     private String nombredeusuario;
+
+    @Column(name = "email", nullable = false, length = 45,unique=true)
+    private String email;
+    @Column(name = "password", nullable = false, length = 45)
+    private String password;
 
     @Column(name = "direccion", length = 45)
     private String direccion;
@@ -118,4 +124,19 @@ public class Usuario {
         this.piso = piso;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

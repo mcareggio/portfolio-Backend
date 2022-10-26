@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class UsuariosService implements IUsuariosService {
 
@@ -31,5 +33,10 @@ public class UsuariosService implements IUsuariosService {
     @Override
     public void find(Integer id) {
 
+    }
+
+    @Override
+    public List<Usuario> findByUsername(String username) {
+        return usuariorep.findBynombredeusuario(username);
     }
 }
